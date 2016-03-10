@@ -49,12 +49,14 @@ public class MergeSortTester {
 
   public static void main(String[] args) {
 	  for (int i = 0; int < 5; int++) {
-	  	System.out.println( "Run time for a set of " + Math.pow(10, i) + " elements")
+	  	System.out.println( "Run time for a set of " + Math.pow(10, i) + " elements");
+	  	int[] w = new int[Math.pow(10, i)];
 	  	for (int u = 0; u < Math.pow(10, i); u++) {
-	  		
+	  		w[i] = (int)(Math.random() * Math.pow(10, i));	
 	  	}
+	  	System.out.println(tester(w));
 	  }
-		System.out.println(tester(arr7, 10));
+	
   }//end main
 
 }//end class
