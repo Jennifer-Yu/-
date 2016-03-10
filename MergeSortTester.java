@@ -50,8 +50,8 @@ public class MergeSortTester {
   public static void main(String[] args) {
 	  for (int i = 0; i < 5; i++) {
 	  	System.out.println( "Run time for a set of " + Math.pow(10, i) + " elements");
-	  	int[] w = new int[Math.pow(10, i)];
-	  	for (int u = 0; u < Math.pow(10, i); u++) {
+	  	int[] w = new int[int)(Math.pow(10, i))];
+	  	for (int u = 0; u < (int)(Math.pow(10, i)); u++) {
 	  		w[i] = (int)(Math.random() * Math.pow(10, i));	
 	  	}
 	  	System.out.println(tester(w));
