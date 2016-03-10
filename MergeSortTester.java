@@ -12,13 +12,14 @@
   
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>
-  n=1       time: 
-  n=10      time: 
-  n=100     time: 
+  n=1       time: 507166 ns
+  n=10      time: 10262 ns
+  n=100     time: 63717 ns
   ...
-  n=<huge>  time: 
+  n=10000  time: 1087456 ns
   ANALYSIS:
-  <INSERT YOUR RESULTS ANALYSIS HERE>
+  
+  The method is O(n log(n)) but for some reason a list of one element takes much longer than a list of 10 and 100 elements.
   ======================================*/
 
 public class MergeSortTester {
@@ -50,7 +51,7 @@ public class MergeSortTester {
   public static void main(String[] args) {
 	  for (int i = 0; i < 5; i++) {
 	  	System.out.println( "Run time for a set of " + Math.pow(10, i) + " elements");
-	  	int[] w = new int[int)(Math.pow(10, i))];
+	  	int[] w = new int[(int)(Math.pow(10, i))];
 	  	for (int u = 0; u < (int)(Math.pow(10, i)); u++) {
 	  		w[i] = (int)(Math.random() * Math.pow(10, i));	
 	  	}
