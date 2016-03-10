@@ -48,7 +48,7 @@ public class MergeSortTester {
      ******************************/
 
   public static void main(String[] args) {
-	  for (int i = 0; int < 5; int++) {
+	  for (int i = 0; i < 5; int++) {
 	  	System.out.println( "Run time for a set of " + Math.pow(10, i) + " elements");
 	  	int[] w = new int[Math.pow(10, i)];
 	  	for (int u = 0; u < Math.pow(10, i); u++) {
