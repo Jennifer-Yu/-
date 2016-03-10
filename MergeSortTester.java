@@ -1,9 +1,15 @@
 /*======================================
   class MergeSortTester
   ALGORITHM:
-  <INSERT YOUR DISTILLATION OF ALGO HERE>
+  1. If you have more than 1 card, split into two and call function again.
+  2. Repeat until 1 card remains.
+  3. Give card to "elder".
+  4. "Elder" sorts cards based on comparison of first cards in each stack.
+  5. Repeat step 4 until sorted.
+  
   BIG-OH CLASSIFICATION OF ALGORITHM:
-  <INSERT YOUR EXECUTION TIME CATEGORIZATION OF MERGESORT HERE>
+  O(n log(n))
+  
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>
   n=1       time: 
