@@ -23,12 +23,10 @@
 
 public class MergeSortTester {
 	
-  public static long tester(int[] arr, int n) {
+  public static long tester(int[] arr) {
 	//n is the number of tests
 	
   long totalsum = 0;
-
-	for (int x = 0; x < n; x++) { 
  
 	    long t1 = System.nanoTime(); //time stamp start
 	    
@@ -36,30 +34,26 @@ public class MergeSortTester {
 
 	    long t2 = System.nanoTime(); //time stamp end
 	    
-	    totalsum += t2 - t1;
+	    totalsum = t2 - t1;
 
 	}
 	    
-	return totalsum / n;
+	return totalsum;
 
   }
 
     /******************************
-     * execution time analysis 
-     * <INSERT YOUR DESCRIPTION HERE OF 
-     *  YOUR APPARATUS FOR GENERATING EXECUTION 
-     *  TIME DATA...>
+     To gather time data, we will sort a list of a certain size. Then we will increment the size by a factor of 10.
+     Then we will analyze the gathered data.
      ******************************/
 
   public static void main(String[] args) {
-	  int[] arr0 = {0};
-		int[] arr1 = {1};
-		int[] arr2 = {1,2};
-		int[] arr3 = {3,4};
-		int[] arr4 = {1,2,3,4};
-		int[] arr5 = {4,3,2,1};
-		int[] arr6 = {9,42,17,63,0,512,23};
-		int[] arr7 = {9,42,17,63,0,9,512,23,9};
+	  for (int i = 0; int < 5; int++) {
+	  	System.out.println( "Run time for a set of " + Math.pow(10, i) + " elements")
+	  	for (int u = 0; u < Math.pow(10, i); u++) {
+	  		
+	  	}
+	  }
 		System.out.println(tester(arr7, 10));
   }//end main
 
