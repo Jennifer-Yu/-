@@ -21,8 +21,28 @@
   <INSERT YOUR RESULTS ANALYSIS HERE>
   ======================================*/
 
-public class MergeSortTester 
-{
+public class MergeSortTester {
+	
+  public static long tester(int[] arr, int n) {
+	//n is the number of tests
+	
+  long totalsum = 0;
+
+	for (int x = 0; x < n; x++) { 
+ 
+	    long t1 = System.nanoTime(); //time stamp start
+	    
+	    MergeSort.sort(arr);
+
+	    long t2 = System.nanoTime(); //time stamp end
+	    
+	    totalsum += t2 - t1;
+
+	}
+	    
+	return totalsum / n;
+
+  }
 
     /******************************
      * execution time analysis 
@@ -30,9 +50,17 @@ public class MergeSortTester
      *  YOUR APPARATUS FOR GENERATING EXECUTION 
      *  TIME DATA...>
      ******************************/
-    public static void main( String[] args ) 
-    {
 
-    }//end main
+  public static void main(String[] args) {
+	  int[] arr0 = {0};
+		int[] arr1 = {1};
+		int[] arr2 = {1,2};
+		int[] arr3 = {3,4};
+		int[] arr4 = {1,2,3,4};
+		int[] arr5 = {4,3,2,1};
+		int[] arr6 = {9,42,17,63,0,512,23};
+		int[] arr7 = {9,42,17,63,0,9,512,23,9};
+		System.out.println(tester(arr7, 10));
+  }//end main
 
 }//end class
