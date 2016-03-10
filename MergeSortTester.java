@@ -89,14 +89,15 @@ public class MergeSortTester {
 
 	}
 	    
-	    return totalsum / n;
+	    return totalsum / tests;
 
     }
 
     public static void main(String[] args) {
-		System.out.println(tester(10, 10));
-		System.out.println(tester(100, 10));
-		System.out.println(tester(1000, 10));
+		System.out.println(tester(5, 1));
+		System.out.println(tester(5, 10));
+		System.out.println(tester(5, 100));
+		System.out.println(tester(5, 10000));
 	    }
 }
 */
