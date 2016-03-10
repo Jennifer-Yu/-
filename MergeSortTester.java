@@ -60,3 +60,42 @@ public class MergeSortTester {
   }//end main
 
 }//end class
+
+/* ALTERNATE METHOD
+public class MergeSortTester {
+	
+    public static long tester(int tests, int n) {
+	//tests is the number of tests
+	//n is the number of items in the dataset
+	
+    long totalsum = 0;
+    
+    int[] arr = new int[n];
+    
+    for (int y = 0; y < n; y++) { //create array
+        arr[y] = (int)(Math.random()*n);
+    }
+
+	for (int x = 0; x < tests; x++) { //take the average time
+ 
+	    long t1 = System.nanoTime(); //time stamp start
+	    
+	    MergeSort.sort(arr);
+
+	    long t2 = System.nanoTime(); //time stamp end
+	    
+	    totalsum += t2 - t1;
+
+	}
+	    
+	    return totalsum / n;
+
+    }
+
+    public static void main(String[] args) {
+		System.out.println(tester(10, 10));
+		System.out.println(tester(100, 10));
+		System.out.println(tester(1000, 10));
+	    }
+}
+*/
